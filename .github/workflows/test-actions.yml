@@ -10,5 +10,8 @@ jobs:
   test-actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: list dir items
         run: ls -la
+      - name: pwd
+        run: pwd
