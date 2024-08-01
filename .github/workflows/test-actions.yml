@@ -30,4 +30,4 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '21'
-      - run: mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+      - run: echo $(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
