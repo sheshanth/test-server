@@ -26,3 +26,4 @@ jobs:
         run: pwd
       - name: ref name
         run: echo "$tag"
+      - run: echo ${{mvn help:evaluate -Dexpression=project.version -q -DforceStdout}}
