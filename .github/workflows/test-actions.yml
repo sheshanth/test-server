@@ -25,6 +25,8 @@ jobs:
           repository: sheshanth/bala
       - name: list dir items
         run: ls -la
+      - name: list all project
+        run : ls -la ../
       - name: pwd
         run: pwd
       - name: ref name
