@@ -16,6 +16,7 @@ jobs:
       run:
         working-directory: project
     steps:
+      - run: echo "${{github.event.action}}"
       - uses: actions/checkout@v4
         with: 
           path: project
