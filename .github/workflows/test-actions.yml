@@ -13,9 +13,7 @@ jobs:
   test-actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $T
-        env:
-          t: $TEST
+      - run: echo "$TEST"
       - uses: actions/checkout@v4
         with: 
           path: project
