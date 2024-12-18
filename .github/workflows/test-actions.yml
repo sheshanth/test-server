@@ -12,11 +12,10 @@ env:
 jobs:
   test-actions:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: project
     steps:
-      - run: echo "$TEST"
+      - run: echo $T
+        env:
+          t: $TEST
       - uses: actions/checkout@v4
         with: 
           path: project
