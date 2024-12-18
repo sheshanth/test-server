@@ -16,10 +16,7 @@ jobs:
       run:
         working-directory: project
     steps:
-      - run: echo $T
-        env:
-          t: $TEST
-      - run: echo "${{github.event.action}}"
+      - run: echo $TEST
       - uses: actions/checkout@v4
         with: 
           path: project
